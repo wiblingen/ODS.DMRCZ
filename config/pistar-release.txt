@@ -1,1 +1,16 @@
-/etc/pistar-release
+[Pi-Star]
+ircddbgateway = 20240519_WPSD git #00143ef
+MMDVMHost = 20240519_WPSD git #00143ef
+kernel = 6.1.0-rpi7-rpi-v7
+Hardware = RaspberryPi
+Platform = Raspberry Pi 3 Model B Plus Rev. 1.3 armv7l 1GB - Sony UK - Board # a020d3
+iface = eth0
+ModemMode = Simplex
+ModemType = stm32dvm
+ControllerType = MMDVM
+ProcNum = 4
+UUID = 0000000021eac0f3
+ConfUpdReqd = 2023010400
+CallLookupProvider = QRZ
+Callsign = PETRBA
+WPSD_Ver = da16187e28
