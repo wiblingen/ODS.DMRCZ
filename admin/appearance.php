@@ -23,7 +23,7 @@ checkSessionValidity();
 	<meta http-equiv="pragma" content="no-cache" />
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 	<meta http-equiv="Expires" content="0" />
-	<title>WPSD - Digital Voice Dashboard - Appearance Settings</title>
+	<title>ODS - Dashboard - Appearance Settings</title>
 	<script type="text/javascript" src="/js/jquery.min.js?version=<?php echo $versionCmd; ?>"></script>
 	<script type="text/javascript" src="/css/farbtastic/farbtastic.min.js?version=<?php echo $versionCmd; ?>"></script>
 	<link rel="stylesheet" type="text/css" href="/css/farbtastic/farbtastic.css" />
@@ -380,8 +380,11 @@ checkSessionValidity();
 	    </div>
 	    
 	    <div class="footer">
-		<a href="https://wpsd.radio/">WPSD</a> &copy; <code>W0CHP</code> 2020-<?php echo date("Y"); ?><br />
-	    </div>
+	   <?php 
+		echo '2025-'.date("Y").'<br />'."\n";
+		echo '<a href="" style="color: #ffffff; text-decoration:underline;">Dashboard</a> predelal Petr Barrandov';
+	   ?>
+	</div>
 	    
 	</div>
     </body>

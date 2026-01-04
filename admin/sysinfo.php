@@ -103,7 +103,7 @@ function timesyncdProc() {
 	<meta http-equiv="pragma" content="no-cache" />
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 	<meta http-equiv="Expires" content="0" />
-	<title>WPSD - Hardware/Software Details</title>
+	<title>ODS - Hardware/Software Details</title>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/config/browserdetect.php'; ?>
 	<link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css" />
 	<script type="text/javascript" src="/js/jquery.min.js?version=<?php echo $versionCmd; ?>"></script>
@@ -148,7 +148,7 @@ function timesyncdProc() {
                 ?>
                 </div><br />
                 </div>
-		<h1>WPSD Hardware/Software Details</h1>
+		<h1>ODS Hardware/Software Details</h1>
 		<p>
 		    <div class="navbar">
               <script type= "text/javascript">
@@ -176,7 +176,7 @@ function timesyncdProc() {
                 <span id="timer"></span>
             </div>
 			<a class="menuconfig" href="/admin/configure.php"><?php echo __( 'Configuration' );?></a>
-			<a class="menuupdate" href="/admin/update.php"><?php echo __( 'WPSD Update' );?></a>
+			<a class="menuupdate" href="/admin/advanced/services.php?action=updatehostsfiles"><?php echo __( 'ODS Update' );?></a>
 			<a class="menupower" href="/admin/power.php"><?php echo __( 'Power' );?></a>
 			<a class="menuadmin" href="/admin/"><?php echo __( 'Admin' );?></a>
 			<a class="menudashboard" href="/"><?php echo __( 'Dashboard' );?></a>
@@ -338,8 +338,11 @@ function timesyncdProc() {
 		</table>
 	    </div>
 	    <div class="footer">
-		<a href="https://wpsd.radio/">WPSD</a> &copy; <code>W0CHP</code> 2020-<?php echo date("Y"); ?><br />
-	    </div>
+	   <?php 
+		echo '2025-'.date("Y").'<br />'."\n";
+		echo '<a href="" style="color: #ffffff; text-decoration:underline;">Dashboard</a> predelal Petr Barrandov';
+	   ?>
+	</div>
 	</div>
     </body>
 </html>

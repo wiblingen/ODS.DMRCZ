@@ -42,10 +42,10 @@ foreach ($cmdoutput as $l) {
     echo "<br />";
 }
 if ($retvalue == 0) {
-    echo "<p style='font-size:larger;'>** Success **</p>";
+    echo "<p style='font-size:larger;'>** Aktualizace probehla v poradku **</p>";
 }
 else {
-    echo "<p tyle='font-size:larger; >!! Failure !!</p>";
+    echo "<p tyle='font-size:larger; >!! Aktualizace se nezdarila !!</p>";
 }
 echo "<br />";
 ?>

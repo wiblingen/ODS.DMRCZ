@@ -25,7 +25,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/config/version.php';
 	<meta http-equiv="pragma" content="no-cache" />
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 	<meta http-equiv="Expires" content="0" />
-	<title>WPSD - Digital Voice Dashboard - Advanced Editor</title>
+	<title>ODS - Dashboard - Advanced Editor</title>
 	<script type="text/javascript" src="/js/jquery.min.js?version=<?php echo $versionCmd; ?>"></script>
 	<link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css" />
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/config/browserdetect.php'; ?>
@@ -39,22 +39,22 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/config/version.php';
 		$action = isset($_GET['action']) ? $_GET['action'] : '';
 
 		if (strcmp($action, 'stop') == 0) {
-		    $action_msg = 'Stopping WPSD Services';
+		    $action_msg = 'Zastaveni  ODS';
 		}
 		else if (strcmp($action, 'fullstop') == 0) {
-		    $action_msg = 'Fully Stopping WPSD Services';
+		    $action_msg = 'Plne zastaveni ODS';
 		}
 		else if (strcmp($action, 'restart') == 0) {
-		    $action_msg = 'Restarting WPSD Services';
+		    $action_msg = 'Restartovani ODS';
 		}
 		else if (strcmp($action, 'status') == 0) {
-		    $action_msg = 'WPSD Services Status';
+		    $action_msg = 'Stav ODS';
 		}
 		else if (strcmp($action, 'updatehostsfiles') == 0) {
-		    $action_msg = "Updating Hostfiles, User ID DB's & Talkgroup Lists...";
+		    $action_msg = "ODS aktualizace novych volacek, serveru a aktualizace volacek Nextion LCD ODS ...";
 		}
 		else {
-		    $action_msg = 'Unknown Action';
+		    $action_msg = 'Neplatny prikaz';
 		}
 		?>
 		
@@ -72,15 +72,18 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/config/version.php';
 			?>
 			<div id="service_result">
 			    <br />
-			    Please Wait...<br />
+			    Prosim cekejte...cca. do minuty o vysledku budete informovani...<br />
 			    <br />
 			</div>
 		    </td></tr>
 		</table>
 	    </div>
 	    <div class="footer">
-		<a href="https://wpsd.radio/">WPSD</a> &copy; <code>W0CHP</code> 2020-<?php echo date("Y"); ?><br />
-	    </div>
+	   <?php 
+		echo '2025-'.date("Y").'<br />'."\n";
+		echo '<a href="" style="color: #ffffff; text-decoration:underline;">Dashboard</a> predelal Petr Barrandov';
+	   ?>
+	</div>
 	    
 	</div>
     </body>

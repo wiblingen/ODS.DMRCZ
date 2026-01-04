@@ -118,8 +118,11 @@ if (!is_dir($config_dir) || count(glob("$config_dir/*")) < 1) {
 
 	</div>
 	    <div class="footer">
-		<a href="https://wpsd.radio/">WPSD</a> &copy; <code>W0CHP</code> 2020-<?php echo date("Y"); ?><br />
-	    </div>
+	   <?php 
+		echo '2025-'.date("Y").'<br />'."\n";
+		echo '<a href="" style="color: #ffffff; text-decoration:underline;">Dashboard</a> predelal Petr Barrandov';
+	   ?>
+	</div>
 	    
 	</div>
     </body>

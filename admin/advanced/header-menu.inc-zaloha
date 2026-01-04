@@ -11,15 +11,15 @@
        </div><br />
     </div>
     <?php if ($_SERVER['REQUEST_URI'] === '/admin/appearance.php') { ?>
-    <h1>ODS - Dashboard Appearance Settings</h1>
+    <h1>WPSD - Digital Voice Dashboard Appearance Settings</h1>
     <?php } else { ?>
-    <h1>ODS - Dashboard Advanced Area</h1>
+    <h1>WPSD - Digital Voice Dashboard Advanced Area</h1>
     <?php } ?>
     <p>
 	<div class="navbar">
 	    <a class="menuconfig" href="/admin/configure.php"><?php echo __( 'Configuration' );?></a>
 	    <a class="menubackup" href="/admin/config_backup.php"><?php echo __( 'Backup/Restore' );?></a>
-	    <a class="menuupdate" href="/admin/advanced/services.php?action=updatehostsfiles"><?php echo __( 'ODS Update' );?></a>
+	    <a class="menuupdate" href="/admin/advanced/services.php?action=updatehostsfiles"><?php echo __( 'DMRCZ Update' );?></a>
 	    <a class="menuadmin" href="/admin/"><?php echo __( 'Admin' );?></a>
 	    <a class="menudashboard" href="/"><?php echo __( 'Dashboard' );?></a>
 	</div>
@@ -144,7 +144,7 @@
 				<li class="subs"><a href="services.php?action=restart">(Re-)Start Services</a></li>
 			    </ul>
 			</li>
-			<li class="subs"><a href="services.php?action=updatehostsfiles">ODS Update</a></li>
+			<li class="subs"><a href="services.php?action=updatehostsfiles">DMRCZ Update</a></li>
 			<li class="subs"><a href="ssh_access.php">SSH Access</a></li>
 			<li class="subs"><a href="jitter_test.php">DMR Jitter Test</a></li>
 			<li class="subs"><a href="calibration.php">MMDVMHost Calibration</a></li>

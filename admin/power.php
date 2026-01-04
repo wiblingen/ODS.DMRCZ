@@ -57,7 +57,7 @@ if ($_SERVER["PHP_SELF"] == "/admin/power.php") {
 	    <meta http-equiv="pragma" content="no-cache" />
 	    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 	    <meta http-equiv="Expires" content="0" />
-	    <title>WPSD <?php echo __( 'Digital Voice' ) . " ".__( 'Dashboard' )." - ".__( 'Power' );?></title>
+	    <title>ODS <?php echo __( 'Digital Voice' ) . " ".__( 'Dashboard' )." - ".__( 'Power' );?></title>
 	    <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css" />
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/config/browserdetect.php'; ?>
         <script type="text/javascript" src="/js/jquery.min.js?version=<?php echo $versionCmd; ?>"></script>
@@ -77,7 +77,7 @@ if ($_SERVER["PHP_SELF"] == "/admin/power.php") {
                       ?>
                       </div><br />
                     </div>
-		    <h1>WPSD <?php echo __( 'Digital Voice' ) . " - ".__( 'Power' );?></h1>
+		    <h1>ODS <?php echo __( 'Dashboard' ) . " - ".__( 'Power' );?></h1>
 			<div class="navbar">
               <script type= "text/javascript">
                $(document).ready(function() {
@@ -105,7 +105,7 @@ if ($_SERVER["PHP_SELF"] == "/admin/power.php") {
             </div>
 			    <a class="menuconfig" href="/admin/configure.php"><?php echo __( 'Configuration' );?></a>
 			    <a class="menubackup noMob" href="/admin/config_backup.php"><?php echo __( 'Backup/Restore' );?></a>
-			    <a class="menuupdate noMob" href="/admin/update.php"><?php echo __( 'WPSD Update' );?></a>
+			    <a class="menuupdate noMob" href="/admin/advanced/services.php?action=updatehostsfiles"><?php echo __( 'ODS Update' );?></a>
 			    <a class="menuadmin noMob" href="/admin/"><?php echo __( 'Admin' );?></a>
 			    <a class="menudashboard" href="/"><?php echo __( 'Dashboard' );?></a>
 			</div>
@@ -157,8 +157,11 @@ if ($_SERVER["PHP_SELF"] == "/admin/power.php") {
 		    <?php } ?>
 		</div>
 		<div class="footer">
-			<a href="https://wpsd.radio/">WPSD</a> &copy; <code>W0CHP</code> 2020-<?php echo date("Y"); ?><br />
-		</div>
+	   <?php 
+		echo '2025-'.date("Y").'<br />'."\n";
+		echo '<a href="" style="color: #ffffff; text-decoration:underline;">Dashboard</a> predelal Petr Barrandov';
+	   ?>
+	</div>
 	    </div>
 	</body>
     </html>
